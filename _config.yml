@@ -7,7 +7,7 @@ highlighter: pygments
 logo: true
 paginate: 15
 baseurl: 
-domain_name: 'http://komodotecnologia.com'
+domain_name: 'http://diihfilipe.github.io/'
 google_analytics: 'UA-XXXXXXXX-X'
 
 # Details for the RSS feed generator
