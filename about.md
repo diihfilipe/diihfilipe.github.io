@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Sobre mim 
 cover: true
 cover: https://upload.wikimedia.org/wikipedia/fr/9/90/Space_Invaders_logo.png
