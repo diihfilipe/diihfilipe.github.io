@@ -9,7 +9,8 @@ paginate: 15
 baseurl: /
 domain_name: 'http://diihfilipe.github.io/'
 google_analytics: 'UA-XXXXXXXX-X'
-cover: assets/images/background.jpg
+cover: http://bydigital.com.br/wp-content/uploads/2013/06/free-office-wallpaper-26001-26685-hd-wallpapers.jpg
+cover_width: 520px
 
 # Details for the RSS feed generator
 url:            'http://diihfilipe.github.io/'
