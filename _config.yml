@@ -9,6 +9,7 @@ paginate: 15
 baseurl: 
 domain_name: 'http://diihfilipe.github.io/'
 google_analytics: 'UA-XXXXXXXX-X'
+cover:http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/08/1409261668002.png
 
 # Details for the RSS feed generator
 url:            'http://diihfilipe.github.io/'
