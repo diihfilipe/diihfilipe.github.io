@@ -2,6 +2,7 @@
 layout: post
 title:  "Artigo Instanciação com JavaScript"
 date:   2015-11-17 12:18:00
+category: Artigos
 ---
 
 ##Instanciação com Javascript  
