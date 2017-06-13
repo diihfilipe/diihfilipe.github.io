@@ -5,9 +5,9 @@
   xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
   xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
   <channel>
-    <title>KomodoDev</title>
+    <title>CodeShip</title>
     <link>https://diihfilipe.github.io</link>
-    <description>Desenvolvimento web.</description>
+    <description>FullStack React Developers.</description>
     <pubDate>Sun, 10 Nov 2013 08:18:00 -0200</pubDate>
     <item>
       <title>Inscreva-se e fique por dentro das novidades:</title>
