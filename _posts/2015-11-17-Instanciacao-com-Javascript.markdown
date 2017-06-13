@@ -4,10 +4,6 @@ title:  "Artigo Instanciação com JavaScript"
 date:   2015-11-17 12:18:00
 ---
 
-##Instanciação com Javascript  
-#####Diego Araújo
-
-
 ##Resumo
 
 Neste artigo falaremos sobre algumas funcionalidades do JavaScript como hoisting, closure, tipos de variáveis e IIFE; usaremos alguns códigos e conceitos retirados de outros artigos como exemplo para melhor entendimento do leitor.
@@ -242,6 +238,3 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Closures
 http://loopinfinito.com.br/2014/10/29/hoisting-e-escopo-em-javascript/  
 https://msdn.microsoft.com/pt-br/library/bzt2dkta%28v=vs.94%29.aspx  
 http://www.w3schools.com/js/js_function_invocation.asp  
-
-
-
