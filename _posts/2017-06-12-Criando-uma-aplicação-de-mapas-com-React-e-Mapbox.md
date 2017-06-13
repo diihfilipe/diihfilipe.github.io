@@ -4,8 +4,6 @@ title:  "Criando uma aplicação de Mapas com React e Mapbox GL JS"
 date:   2017-06-12 23:00:00
 ---
 
-### Criando uma aplicação de Mapas com __React__ e __Mapbox__ GL JS
-
 Irei fazer uma série de 'artigos' mostrando como criar uma aplicação rica de funcionalidades utilizando React e Mapbox, também utilizaremos algumas bibliotecas interessantes como TurfJS e Mapbox GL Draw, sintam-se a vontade para opinar a respeito e dar pull requests, pois o intuito é sempre passar o conhecimento adiante, e quanto mais colaboradores melhor. Segue o bonde...
 
 #### Documentações:
