@@ -268,8 +268,7 @@ posição do usuario, esse evento é chamado pelo clique do botão 'Me Encontre'
 
 /*E finalmente a função que vai fazer esse 'flyTo', ela apenas pega as informações que jogamos no estado e executa
 a ação, veja que aqui precisamos usar a constante 'map', pois quando voce usa o metodo 'new mapboxgl.Map'
-somente essa constante possui os metodos para lidarmos com ações no mapa, por isso jogamos ela no estado ai
-cria-la para nao ficarmos gerando objetos globais.*/  
+somente essa constante possui os metodos para lidarmos com ações no mapa, por isso jogamos ela no estado para nao ficarmos gerando objetos globais.*/  
 
   handleFlyToAPosition(){
     const { center, map } = this.state
