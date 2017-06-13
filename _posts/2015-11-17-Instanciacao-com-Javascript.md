@@ -4,18 +4,18 @@ title:  "Artigo Instanciação com JavaScript"
 date:   2015-11-17 12:18:00
 ---
 
-##Resumo
+## Resumo
 
 Neste artigo falaremos sobre algumas funcionalidades do JavaScript como hoisting, closure, tipos de variáveis e IIFE; usaremos alguns códigos e conceitos retirados de outros artigos como exemplo para melhor entendimento do leitor.
 
-##Palavras-chave
+## Palavras-chave
 Javascript, Hoisting, Closure, Variáveis.
 
-##Hoisting
+## Hoisting
 
 Hoisting se traduzido literalmente significa: levantar algo através de algum meio, em JavaScript quando declaramos uma variável ou função ela sobe para o topo do escopo.  
 
-```javascript
+```js
 //Primeiramente vamos tentar imprimir no console uma variável que não foi declarada  
 try {  
   console.log(a)  
@@ -35,7 +35,7 @@ try {
 Neste caso o console retornará "undefined", pois a variavel foi declarada mas não instanciada, este é um exemplo básico de hoisting com variáveis.
 Nas funções tudo ocorre um pouco diferente, pois o nome e o corpo da função serão "hoisteados" quando esta for declarada.
 
-```javascript
+```js
 //Chamando uma função antes da sua instanciação  
 foo()  
 function foo() {  
@@ -45,13 +45,13 @@ function foo() {
 
 Neste caso o console não imprimirá erros, pois, como foi dito a função e seu corpo são hoisteados na sua declaração.
 
-##Closures
+## Closures
 
 "Closures(fechamentos) são funções que se referem a variáveis livres(independentes)." (2015, https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Closures).  
 As closures nos permitem associar dados com uma função que usará tais dados(tal como na orientação a objetos), onde os objetos por sua vez nos permitem associar dados utilizando métodos.
 Usaremos um exemplo de um artigo do site Developer Mozilla.  
 
-```javascript
+```js
 function makeSizer(size) {  
   return function() {  
     document.body.style.fontSize = size + 'px';  
@@ -61,7 +61,7 @@ function makeSizer(size) {
 
 Uma das utilidades das closures no JavaScript é emular métodos privados, ou seja criar métodos que só poderão ser chamados por outros métodos que estejam dentro da mesma classe. Obviamente a utilidade desse tipo de declaração é para criar restrições de acesso ao código, de forma que determinados métodos não fiquem "soltos" no nosso código.
 
-```javascript
+```js
 var makeCounter = function() {  
   var privateCounter = 0;  
   function changeBy(val) {  
@@ -92,11 +92,11 @@ alert(Counter2.value()); /* Alerts 0 */
 
 (2015, https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Closures).
 
-##Variável Global
+## Variável Global
 
 No JavaScript temos dois tipos de variáveis: Global e local. As variáveis globais são aquelas que foram declaradas fora de uma definição/escopo de função, seu valor e propriedades ficam acessíveis em todo o escopo do seu código(o que pode ser perigoso).
 
-```javascript
+```js
 var global = "Eu sou uma variavel global"; // variavel global  
 function varLocal () {  
   var global = "Eu sou uma variavel local"; // variavel local  
@@ -111,7 +111,7 @@ No exemplo acima será impresso no console "Eu sou uma variável global" e logo 
 
 Em Javascript é comum encontrarmos funções que recebem alguns parametros especificos, como por exemplo:  
 
-```javascript
+```js
 function variaveisPorParametros(parametro1, parametro2 parametro99999) {  
   somaParametros = parametro1 + parametro2 + parametro99999;  
   return somaParametros;  
@@ -122,7 +122,7 @@ Para utilizar essa passagem de variaveis por parametros, existem algumas regras 
 
 1 - As definições das funções em JavaScript não especificam os tipos de dados para os parametros.  
 
-```javascript
+```js
 // procure usar nomes de parametros sugestivos  
  function somaNumeros(num1, num2){  
   total = num1 + num2;  
@@ -136,7 +136,7 @@ somaNumeros(a, b);
 
 2 - As funções em JavaScript não executam verificação de tipo(integer, float, boolean, etc) sobre os argumentos passados.  
 
-```javascript
+```js
 // se instanciarmos variaveis com tipos diferentes do esperado não receberemos o resultado esperado  
  function somaNumeros(num1, num2){  
   total = num1 + num2;  
@@ -150,7 +150,7 @@ somaNumeros(a, b);
 
 3 - As funções em JavaScript não verificam o número de argumentos recebidos.  
 
-```javascript
+```js
 function somaNumeros(num1, num2){  
   total = num1 + num2;  
   return total;  
@@ -162,7 +162,7 @@ somaNumeros(a);
 
 Isso acontece porque quando uma função é chamada e algum argumento está faltando, este argumento será setado por padrão como undefined(o que no exemplo explica o erro pois um numero não pode ser somado com undefined), no caso oposto, quando existem mais parametros do que os esperados, os parametros que excedem são desconsiderados.
 
-```javascript
+```js
 function somaNumeros(num1, num2){  
     total = num1 + num2;  
     return total;  
@@ -181,7 +181,7 @@ Expressões IIFE podem ser escritas de várias maneiras, porém existe uma conve
 
 Usabilidade:
 
-```javascript
+```js
 var v, getValue;  
 v = 1;  
 getValue = function() { return v; };  
@@ -191,7 +191,7 @@ getValue(); // 2
 
 Enquanto o resultado pode parecer óbvio ao atualizar v manualmente , ele pode produzir resultados indesejados quando getValue () é definido dentro de um loop.  
 
-```javascript
+```js
 var v, getValue;  
 v = 1;  
 getValue = (function(x) {  
@@ -204,7 +204,7 @@ getValue(); // 1
 Aqui, a função passa v como um argumento e é invocado imediatamente , preservando contexto de execução da função interna.
 IIFEs também são úteis para o estabelecimento de métodos privados para funções acessíveis enquanto ainda expor algumas propriedades para uso posterior. O exemplo a seguir vem do post de Alman em IIFEs.  
 
-```javascript
+```js
 var counter = (function(){  
   var i = 0;  
   return {  
@@ -232,7 +232,7 @@ Se tentarmos acessar counter.i do ambiente global , ela será indefinida como se
 Todos esses tópicos abordados aqui fazem parte do ciclo de vida de qualquer programador que use não só JavaScript mas também outras linguagens. É muito importante conhecermos como funciona a linguagem em que programamos para que não haja erros em nossos projetos. As vezes nos preocupamos excessivamente em "o que a linguagem faz" do que "como ela faz" e entender essa segunda parte é essencial para dominar completamente a linguagem escolhida e construir projetos sólidos do inicio ao fim.
 
 
-##Bibliografia
+## Bibliografia
 
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Closures  
 http://loopinfinito.com.br/2014/10/29/hoisting-e-escopo-em-javascript/  
