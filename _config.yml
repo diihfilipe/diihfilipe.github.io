@@ -1,6 +1,6 @@
 name: CodeShip
-description: 3...2...1... your idea has been launched.
-meta_description: "FullStack React Developers."
+description: FullStack React Developers.
+meta_description: ""
 
 markdown: redcarpet
 highlighter: pygments
