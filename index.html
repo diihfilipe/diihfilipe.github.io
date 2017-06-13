@@ -4,8 +4,6 @@ title: Home
 cover: true
 cover: http://www.jstips.co/assets/images/jstips-animation.gif
 cover_width: 520px
-logo: assets/images/logo.png
-logo_width: 150px
 ---
 
 <header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
@@ -15,7 +13,6 @@ logo_width: 150px
                     <img src="{{ page.logo }}" alt="Blog Logo" />
                 </a>
             {% endif %}
-        <a class="subscribe-button icon-feed" href="{{ site.baseurl }}rss.xml">Inscreva-se</a>
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
