@@ -3,7 +3,7 @@ layout: default
 title: Home
 cover: true
 about: 'about.html'
-cover: http://bydigital.com.br/wp-content/uploads/2013/06/free-office-wallpaper-26001-26685-hd-wallpapers.jpg
+cover: http://www.jstips.co/assets/images/jstips-animation.gif
 cover_width: 520px
 logo: assets/images/logo.png
 logo_width: 150px
@@ -52,12 +52,12 @@ logo_width: 150px
                 <img class="author-thumb" src="assets/images/profile.jpg" alt="Author's profile picture" nopin="nopin" />
                 {{ site.author }}
             {% endif %}
-            {% if post.categories.size > 0 %} 
-                {{ post.categories | array_to_sentence_string | prepend: 'on ' }} 
+            {% if post.categories.size > 0 %}
+                {{ post.categories | array_to_sentence_string | prepend: 'on ' }}
             {% endif %}
             <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
                 {{ post.date | date_to_string }}
-            </time> 
+            </time>
         </footer>
     </article>
 
