@@ -231,7 +231,7 @@ class Map extends Component{ // criamos nosso componente Map como classe pois pr
   }
 
 /* a função handleMap, vai receber as props que passamos no homeContainer, e vai criar uma constante chamada Map, e
-que vai criar um novo mapa(a documentação do Mapbox tem todo esse getstated). Depois passamos para o state essa
+que vai criar um novo mapa(a documentação do Mapbox tem todo esse getstarted). Depois passamos para o state essa
 constante, apenas para não ficar criando objetos globais, pois precisaremos chamar esse cara depois.*/  
 
   handleMap(container, style, center, zoom, accessToken){
