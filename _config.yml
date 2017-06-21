@@ -9,7 +9,7 @@ paginate: 15
 baseurl: /
 domain_name: 'http://diihfilipe.github.io/'
 google_analytics: 'UA-XXXXXXXX-X'
-cover: http://www.jstips.co/assets/images/jstips-animation.gif
+cover: https://s3-us-west-2.amazonaws.com/codeshiplabs/codeshiplogo.jpeg
 cover_width: 520px
 
 # Details for the RSS feed generator
